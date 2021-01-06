@@ -1,0 +1,16 @@
+
+<div *ngIf="displayComponent" class="box">  
+    <div class="left">
+        <img src={{displayUser.data.avatar}} />
+    </div>
+    <div class="right">
+        <div>
+            <h3>ID: {{displayUser.data.id}}</h3>
+            <div><b>Name:</b> {{displayUser.data.first_name}} {{displayUser.data.last_name}}</div>
+            <div><b>Email Id:</b> {{displayUser.data.email}}</div>
+        </div>
+    </div>
+</div>
+<div>
+    <button (click)="back()">Back</button>
+</div>

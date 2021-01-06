@@ -1,0 +1,7 @@
+
+<div class="col-sm">
+<select class="list" (change)="name($event.target.value)">
+    <option value="">Select Name</option>
+    <option  *ngFor="let user of userList.data" [value]="user.id">{{user.first_name}} {{user.last_name}}</option>
+</select>
+</div>
